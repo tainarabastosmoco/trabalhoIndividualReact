@@ -1,0 +1,74 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #333;
+  margin: 0;
+}
+
+.container {
+  padding: 20px;
+  max-width: 300px;
+  border: 2px solid rgb(212, 31, 61);
+  border-radius: 10px;
+  background-color: #ffe6f2;
+  text-align: center;
+}
+  
+h3, p {
+    color:  rgb(212, 31, 61);
+  }
+
+h2 {
+    color: rgb(212, 31, 61);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 
+      0 0 5px rgba(212, 31, 61, 0.5),
+      0 0 10px rgba(212, 31, 61, 0.7),
+      0 0 15px rgba(212, 31, 61, 1);
+    animation: glow 1.5s infinite alternate;
+  }
+  
+  @keyframes glow {
+    0% {
+      text-shadow: 
+        0 0 5px rgba(212, 31, 61, 0.5), 
+        0 0 10px rgba(212, 31, 61, 0.7), 
+        0 0 15px rgba(212, 31, 61, 1);
+    }
+    100% {
+      text-shadow: 
+        0 0 10px rgba(212, 31, 61, 0.7), 
+        0 0 20px rgba(212, 31, 61, 1), 
+        0 0 30px rgba(212, 31, 61, 1.2);
+    }
+  }
+  
+  
+  input {
+    border: 1px solid  rgb(212, 31, 61);
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  button {
+    margin-top: 20px;
+    background-color: rgb(212, 31, 61);
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  footer {
+    margin-top: 15px;
+  }
+  .resultado {
+    color: #333;
+  }
